@@ -8,10 +8,52 @@
 package VideoRentalInventorSystem.definitions;
 
 public class Video {
-    //1.always set visiblity modifier of field to private unless otherwisse specified
-    //2. always set teh acess modifier of field to non-static unless otherwisse specified
+    //1.always set visibility modifier of field to private unless otherwise specified
+    //2.always set teh access modifier of field to non-static unless otherwise specified
+    //field
     private String videoName;
     private int rating;
     private boolean checkOut;
 
+    //Method
+    /*public String getName(){
+        return videoName;
+    }*/
+    //1. The Getter Method- is used  to read the value of private field.
+    //Observer / Accessor method
+
+    //formula
+    //public <am:sameAsTheField><rt:sameAsTheField> get<NameOfTheField>
+
+    public String getVideoName() {
+        return videoName;
+    }
+
+    /**
+     * The setter method- used to write the value of private field.
+     * Transformer/mutator method
+     **/
+
+    //forula
+    //public<sameAsTheField> void set<NameOfTheField>(<sameAsTheField>) {}
+    public void setVideoName(String videoName) {
+        this.videoName = videoName;
+    }
+
+    public int getRating() {
+        return rating;
+    }
+
+    public void setRating(int rating) {
+        this.rating = rating;
+    }
+
+    //Rule for boolean -start with is insted of get
+    public boolean isCheckOut() {
+        return checkOut;
+    }
+
+    public void setCheckOut(boolean checkOut) {
+        this.checkOut = checkOut;
+    }
 }
