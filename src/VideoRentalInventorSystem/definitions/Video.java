@@ -19,6 +19,25 @@ public class Video {
     /*public String getName(){
         return videoName;
     }*/
+
+    //Constructor Method- used to initialize field of an object.
+
+    //formula
+    //public <no access modifier> <no return type> <sameAsTheClass>(<parameters>) {}
+    //non-parameterized constructor
+    public Video() {
+        this.videoName = "manish";
+        this.rating = 5;
+        this.checkOut = true;
+    }
+
+    //parameterized constructor
+    public Video(String videoName, int rating, boolean checkOut) {
+        this.videoName = videoName;
+        this.rating = rating;
+        this.checkOut = checkOut;
+    }
+
     //1. The Getter Method- is used  to read the value of private field.
     //Observer / Accessor method
 
@@ -48,7 +67,7 @@ public class Video {
         this.rating = rating;
     }
 
-    //Rule for boolean -start with is insted of get
+    //Rule for boolean -start with is instead of get
     public boolean isCheckOut() {
         return checkOut;
     }
