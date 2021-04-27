@@ -7,6 +7,8 @@
 
 package VideoRentalInventorSystem.definitions;
 
+import java.util.Objects;
+
 public class Video {
     //1.always set visibility modifier of field to private unless otherwise specified
     //2.always set teh access modifier of field to non-static unless otherwise specified
@@ -89,5 +91,25 @@ public class Video {
                 ", rating=" + rating +
                 ", checkOut=" + checkOut +
                 '}';
+    }
+
+    //The 'Object' is a reference type in java
+    //Special thing about the object type is,
+    //the Object class is super class of all the other classes in java
+    //i.e all the classes that we created are already defined
+    //are drove from object class
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Video video = (Video) o;
+        return getRating() == video.getRating() &&
+                isCheckOut() == video.isCheckOut() &&
+                Objects.equals(getVideoName(), video.getVideoName());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getVideoName(), getRating(), isCheckOut());
     }
 }
