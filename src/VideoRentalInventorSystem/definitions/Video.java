@@ -75,4 +75,19 @@ public class Video {
     public void setCheckOut(boolean checkOut) {
         this.checkOut = checkOut;
     }
+
+    //The toString()method
+    //formula
+    //public String toString(){}
+    //used to convert the Object to a string.
+
+
+    @Override
+    public String toString() {
+        return "Video{" +
+                "videoName='" + videoName + '\'' +
+                ", rating=" + rating +
+                ", checkOut=" + checkOut +
+                '}';
+    }
 }
