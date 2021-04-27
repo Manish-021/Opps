@@ -26,7 +26,7 @@ public class Video {
     //public <no access modifier> <no return type> <sameAsTheClass>(<parameters>) {}
     //non-parameterized constructor
     public Video() {
-        this.videoName = "manish";
+        this.videoName = "sahoo Trailer";
         this.rating = 5;
         this.checkOut = true;
     }
