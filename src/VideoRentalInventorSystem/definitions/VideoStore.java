@@ -61,5 +61,8 @@ public class VideoStore {
     public void doreturn(String name) {
         System.out.println("thank you for returning the video\"" + name + "\".");
     }
-}
+
+    public void receiveRating(String name, int rating) {
+        System.out.println("the new rating of " + name + "is now " + rating);
+    }
 }
