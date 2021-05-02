@@ -54,6 +54,12 @@ public class VideoStore {
     //@param name the name of the video that costumer wants to rent.
 
     public void doCheckOut(String name) {
-        System.out.println("thank you for renting\"" + name() + "\".");
+        System.out.println("thank you for renting\"" + name + "\".");
     }
+
+    //this method will allow the costumer to return a video that they rented.
+    public void doreturn(String name) {
+        System.out.println("thank you for returning the video\"" + name + "\".");
+    }
+}
 }
