@@ -12,7 +12,7 @@ import VideoRentalInventorSystem.definitions.Video;
 public class Main {
     public static void main(String[] args) {
         Video video = new Video();
-        Video video1 = new Video("sahoo", 5, true);
+        Video video1 = new Video("sahoo");
         if (video.equals(video1)) {
             System.out.println("they are exactly same");
         } else {

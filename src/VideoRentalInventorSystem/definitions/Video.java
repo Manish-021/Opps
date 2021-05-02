@@ -34,10 +34,18 @@ public class Video {
     }
 
     //parameterized constructor
-    public Video(String videoName, int rating, boolean checkOut) {
+    public Video(String videoName) {
         this.videoName = videoName;
-        this.rating = rating;
-        this.checkOut = checkOut;
+        this.rating = 3;
+        this.checkOut = true;
+    }
+
+    /**
+     * This method will  allow the costumer to rent a video.
+     **/
+
+    public void doCheckOut() {
+        System.out.println("Thankyou for renting\"" + getVideoName() + "\".");
     }
 
     //1. The Getter Method- is used  to read the value of private field.
@@ -47,6 +55,7 @@ public class Video {
     //public <am:sameAsTheField><rt:sameAsTheField> get<NameOfTheField>
 
     public String getVideoName() {
+
         return videoName;
     }
 
@@ -55,7 +64,7 @@ public class Video {
      * Transformer/mutator method
      **/
 
-    //forula
+    //formula
     //public<sameAsTheField> void set<NameOfTheField>(<sameAsTheField>) {}
     public void setVideoName(String videoName) {
         this.videoName = videoName;
@@ -110,6 +119,7 @@ public class Video {
 
     @Override
     public int hashCode() {
+
         return Objects.hash(getVideoName(), getRating(), isCheckOut());
     }
 }
