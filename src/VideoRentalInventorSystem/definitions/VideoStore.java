@@ -7,5 +7,6 @@
 
 package VideoRentalInventorSystem.definitions;
 
-public class VideoStrore {
+public class VideoStore {
+    private Video[] store;
 }
