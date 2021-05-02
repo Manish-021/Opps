@@ -50,7 +50,7 @@ public class Video {
 
     //method alow to return a video.
     public void doReturn() {
-        System.out.println("thank you for returning then video\"" + getVideoName() + "\".");
+        System.out.println("thank you for returning the video\"" + getVideoName() + "\".");
     }
 
     //1. The Getter Method- is used  to read the value of private field.
