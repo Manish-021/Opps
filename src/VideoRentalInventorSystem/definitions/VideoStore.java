@@ -44,4 +44,9 @@ public class VideoStore {
     public int hashCode() {
         return Arrays.hashCode(getStore());
     }
+
+    //This method will allow us to add a video to our store.
+    public void addVideo(String name) {
+        System.out.println("\"" + name + "\"is now added to the store");
+    }
 }
