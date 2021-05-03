@@ -65,4 +65,10 @@ public class VideoStore {
     public void receiveRating(String name, int rating) {
         System.out.println("the new rating of " + name + "is now " + rating);
     }
+
+    public void listInventory() {
+        for (Video video : this.store) {
+            System.out.println(video);
+        }
+    }
 }
