@@ -8,6 +8,7 @@ Assume that an object of class video has the following attributes:
 2. A flag to say whaether it is out or not
 3. An average user rating
 The VideoStore class will contain at least an instance variable that references an array of video(say length 10). 
+
 The VideoStore will contain the following methods
 1. addVideo: add a new video to the inventory.
 2. checkOut: chec%s out a video.
