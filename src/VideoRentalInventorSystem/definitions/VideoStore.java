@@ -14,6 +14,13 @@ public class VideoStore {
 
     public VideoStore() {
         this.store = new Video[5];
+        for (int i = 0; i < store.length; i++) {
+            store[i] = new Video();
+        }
+    }
+
+    public VideoStore(Video[] store) {
+        this.store = store;
     }
 
     public Video[] getStore() {
